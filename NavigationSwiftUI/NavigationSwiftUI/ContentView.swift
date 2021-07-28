@@ -1,16 +1,16 @@
 import SwiftUI
 
 private let spaceShips: [Model] = [
-    Model(name: "SpaceShip01"),
-    Model(name: "SpaceShip02"),
-    Model(name: "SpaceShip03"),
-    Model(name: "SpaceShip04"),
-    Model(name: "SpaceShip05"),
-    Model(name: "SpaceShip06"),
-    Model(name: "SpaceShip07"),
-    Model(name: "SpaceShip08"),
-    Model(name: "SpaceShip09"),
-    Model(name: "SpaceShip10")
+    Model(name: "01 CR90 corvette"),
+    Model(name: "02 Star Destroyer"),
+    Model(name: "03 Death Star"),
+    Model(name: "04 Millennium Falcon"),
+    Model(name: "05 Y-wing"),
+    Model(name: "06 X-wing"),
+    Model(name: "07 TIE Advanced x1"),
+    Model(name: "08 Executor"),
+    Model(name: "09 Rebel transport"),
+    Model(name: "10 Imperial shuttle [22]")
 ]
 
 struct ContentView: View {
@@ -20,6 +20,7 @@ struct ContentView: View {
                 Group {
                     Text("\(color.name)")
                 }.font(.title2)
+                .foregroundColor(.green)
             }
         }
     }
