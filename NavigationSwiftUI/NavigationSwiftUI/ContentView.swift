@@ -1,25 +1,75 @@
 import SwiftUI
 
 private let starships: [Starship] = [
-    Starship(name: "CR90 corvette", model: "CR90 corvette", manufacturer: "Corellian Engineering Corporation"),
+    Starship(name: "CR90 corvette",
+             model: "CR90 corvette",
+             manufacturer: "Corellian Engineering Corporation",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "Star Destroyer", model: "Imperial I-class Star Destroyer", manufacturer: "Kuat Drive Yards"),
+    Starship(name: "Star Destroyer",
+             model: "Imperial I-class Star Destroyer",
+             manufacturer: "Kuat Drive Yards",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "Death Star", model: "DS-1 Orbital Battle Station", manufacturer: "Imperial Department of Military Research, Sienar Fleet Systems"),
+    Starship(name: "Death Star",
+             model: "DS-1 Orbital Battle Station",
+             manufacturer: "Imperial Department of Military Research, Sienar Fleet Systems",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "Millennium Falcon", model: "YT-1300 light freighter", manufacturer: "Corellian Engineering Corporation"),
+    Starship(name: "Millennium Falcon",
+             model: "YT-1300 light freighter",
+             manufacturer: "Corellian Engineering Corporation",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "Y-wing", model: "BTL Y-wing", manufacturer: "Koensayr Manufacturing"),
+    Starship(name: "Y-wing",
+             model: "BTL Y-wing",
+             manufacturer: "Koensayr Manufacturing",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "X-wing", model: "T-65 X-wing", manufacturer: "Incom Corporation"),
+    Starship(name: "X-wing",
+             model: "T-65 X-wing",
+             manufacturer: "Incom Corporation",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "TIE Advanced x1", model: "Twin Ion Engine Advanced x1", manufacturer: "Sienar Fleet Systems"),
+    Starship(name: "TIE Advanced x1",
+             model: "Twin Ion Engine Advanced x1",
+             manufacturer: "Sienar Fleet Systems",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "Executor", model: "Executor-class star dreadnought", manufacturer: "Kuat Drive Yards, Fondor Shipyards"),
+    Starship(name: "Executor",
+             model: "Executor-class star dreadnought",
+             manufacturer: "Kuat Drive Yards, Fondor Shipyards",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "Rebel transport", model: "GR-75 medium transport", manufacturer: "Gallofree Yards, Inc."),
+    Starship(name: "Rebel transport",
+             model: "GR-75 medium transport",
+             manufacturer: "Gallofree Yards, Inc.",
+             crew: "",
+             passengers: "",
+             cargoCapacity: ""),
     
-    Starship(name: "Imperial shuttle", model: "Lambda-class T-4a shuttle", manufacturer: "Sienar Fleet Systems")
+    Starship(name: "Imperial shuttle",
+             model: "Lambda-class T-4a shuttle",
+             manufacturer: "Sienar Fleet Systems",
+             crew: "",
+             passengers: "",
+             cargoCapacity: "")
 ]
 
 struct ContentView: View {
