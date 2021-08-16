@@ -1,16 +1,25 @@
 import SwiftUI
 
 private let starships: [Starship] = [
-    Starship(name: "01 CR90 corvette", model: "CR90 corvette"),
-    Starship(name: "02 Star Destroyer", model: "Imperial I-class Star Destroyer"),
-    Starship(name: "03 Death Star", model: "DS-1 Orbital Battle Station"),
-    Starship(name: "04 Millennium Falcon", model: "YT-1300 light freighter"),
-    Starship(name: "05 Y-wing", model: "BTL Y-wing"),
-    Starship(name: "06 X-wing", model: "T-65 X-wing"),
-    Starship(name: "07 TIE Advanced x1", model: "Twin Ion Engine Advanced x1"),
-    Starship(name: "08 Executor", model: "Executor-class star dreadnought"),
-    Starship(name: "09 Rebel transport", model: "GR-75 medium transport"),
-    Starship(name: "10 Imperial shuttle", model: "Lambda-class T-4a shuttle")
+    Starship(name: "CR90 corvette", model: "CR90 corvette", manufacturer: "Corellian Engineering Corporation"),
+    
+    Starship(name: "Star Destroyer", model: "Imperial I-class Star Destroyer", manufacturer: "Kuat Drive Yards"),
+    
+    Starship(name: "Death Star", model: "DS-1 Orbital Battle Station", manufacturer: "Imperial Department of Military Research, Sienar Fleet Systems"),
+    
+    Starship(name: "Millennium Falcon", model: "YT-1300 light freighter", manufacturer: "Corellian Engineering Corporation"),
+    
+    Starship(name: "Y-wing", model: "BTL Y-wing", manufacturer: "Koensayr Manufacturing"),
+    
+    Starship(name: "X-wing", model: "T-65 X-wing", manufacturer: "Incom Corporation"),
+    
+    Starship(name: "TIE Advanced x1", model: "Twin Ion Engine Advanced x1", manufacturer: "Sienar Fleet Systems"),
+    
+    Starship(name: "Executor", model: "Executor-class star dreadnought", manufacturer: "Kuat Drive Yards, Fondor Shipyards"),
+    
+    Starship(name: "Rebel transport", model: "GR-75 medium transport", manufacturer: "Gallofree Yards, Inc."),
+    
+    Starship(name: "Imperial shuttle", model: "Lambda-class T-4a shuttle", manufacturer: "Sienar Fleet Systems")
 ]
 
 struct ContentView: View {
@@ -49,6 +58,9 @@ struct DetailScreen: View {
             }
             
             Text("Model: \(selectedStarship.model)")
+                .padding(.top)
+            
+            Text("Manufacturer: \(selectedStarship.manufacturer)")
                 .padding(.top)
             
             Spacer()
