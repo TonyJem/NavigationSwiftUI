@@ -2,4 +2,4 @@
 
 SkillFactory HomeWork Hackaton task is finished:
  read
-<img src="/readmeImages/demoView.gif" width="33%">
+<img src="/readmeImages/resultGif.gif" width="33%">
