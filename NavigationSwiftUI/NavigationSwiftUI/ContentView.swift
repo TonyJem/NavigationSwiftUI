@@ -19,10 +19,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(courseArray) { cource in
-                VStack {
-                    Text(cource.courseName)
-                        .padding(.trailing)
+                
+                NavigationLink(destination: DetailScreen(courseItem: cource)) {
+                    
+                    VStack {
+                        Text(cource.courseName)
+                            .padding(.trailing)
+                    }
                 }
+                
             }.navigationTitle("Курсы Skillfactory")
         }
     }
@@ -31,5 +36,29 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct DetailScreen: View {
+    let courseItem: CourseObject
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            
+            HStack {
+                Text(courseItem.courseName)
+                    .font(.largeTitle)
+                    .bold()
+                
+                Spacer()
+            }
+            
+            Text(courseItem.aboutCourse)
+                .padding(.top)
+            
+            Spacer()
+        }
+        .padding()
+        .navigationBarTitle(Text(courseItem.courseName), displayMode: .inline)
     }
 }
