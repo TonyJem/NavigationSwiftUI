@@ -2,7 +2,7 @@ import SwiftUI
 
 private let starships: [Starship] = [
     Starship(name: "CR90 corvette",
-             image: "test",
+             image: "01",
              model: "CR90 corvette",
              manufacturer: "Corellian Engineering Corporation",
              crew: "30-165",
@@ -10,7 +10,7 @@ private let starships: [Starship] = [
              cargoCapacity: "3000000"),
     
     Starship(name: "Star Destroyer",
-             image: "test",
+             image: "02",
              model: "Imperial I-class Star Destroyer",
              manufacturer: "Kuat Drive Yards",
              crew: "47,060",
@@ -18,7 +18,7 @@ private let starships: [Starship] = [
              cargoCapacity: "36000000"),
     
     Starship(name: "Death Star",
-             image: "test",
+             image: "03",
              model: "DS-1 Orbital Battle Station",
              manufacturer: "Imperial Department of Military Research, Sienar Fleet Systems",
              crew: "342,953",
@@ -26,7 +26,7 @@ private let starships: [Starship] = [
              cargoCapacity: "1000000000000"),
     
     Starship(name: "Millennium Falcon",
-             image: "test",
+             image: "04",
              model: "YT-1300 light freighter",
              manufacturer: "Corellian Engineering Corporation",
              crew: "4",
@@ -34,7 +34,7 @@ private let starships: [Starship] = [
              cargoCapacity: "100000"),
     
     Starship(name: "Y-wing",
-             image: "test",
+             image: "05",
              model: "BTL Y-wing",
              manufacturer: "Koensayr Manufacturing",
              crew: "2",
@@ -42,7 +42,7 @@ private let starships: [Starship] = [
              cargoCapacity: "110"),
     
     Starship(name: "X-wing",
-             image: "test",
+             image: "06",
              model: "T-65 X-wing",
              manufacturer: "Incom Corporation",
              crew: "1",
@@ -50,7 +50,7 @@ private let starships: [Starship] = [
              cargoCapacity: "110"),
     
     Starship(name: "TIE Advanced x1",
-             image: "test",
+             image: "07",
              model: "Twin Ion Engine Advanced x1",
              manufacturer: "Sienar Fleet Systems",
              crew: "1",
@@ -58,7 +58,7 @@ private let starships: [Starship] = [
              cargoCapacity: "150"),
     
     Starship(name: "Executor",
-             image: "test",
+             image: "08",
              model: "Executor-class star dreadnought",
              manufacturer: "Kuat Drive Yards, Fondor Shipyards",
              crew: "279,144",
@@ -66,7 +66,7 @@ private let starships: [Starship] = [
              cargoCapacity: "250000000"),
     
     Starship(name: "Rebel transport",
-             image: "test",
+             image: "09",
              model: "GR-75 medium transport",
              manufacturer: "Gallofree Yards, Inc.",
              crew: "6",
@@ -74,7 +74,7 @@ private let starships: [Starship] = [
              cargoCapacity: "19000000"),
     
     Starship(name: "Imperial shuttle",
-             image: "test",
+             image: "10",
              model: "Lambda-class T-4a shuttle",
              manufacturer: "Sienar Fleet Systems",
              crew: "6",
@@ -117,12 +117,12 @@ struct DetailScreen: View {
                 Spacer()
             }
             
-            Text("Model: \(selectedStarship.model)")
-                .padding(.top)
-            
             Image("\(selectedStarship.image)")
                 .resizable()
                 .scaledToFit()
+            
+            Text("Model: \(selectedStarship.model)")
+                .padding(.top)
             
             Text("Manufacturer: \(selectedStarship.manufacturer)")
                 .padding(.top)
