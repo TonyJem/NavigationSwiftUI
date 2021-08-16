@@ -1,6 +1,6 @@
 import SwiftUI
 
-private let spaceShips: [Model] = [
+private let starShips: [Model] = [
     Model(name: "01 CR90 corvette"),
     Model(name: "02 Star Destroyer"),
     Model(name: "03 Death Star"),
@@ -18,7 +18,7 @@ struct ContentView: View {
         NavigationView {
             
             List {
-                ForEach(spaceShips) { color in
+                ForEach(starShips) { color in
                     Group {
                         Text("\(color.name)")
                     }.font(.title2)
