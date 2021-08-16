@@ -10,7 +10,7 @@ private let spaceShips: [Model] = [
     Model(name: "07 TIE Advanced x1"),
     Model(name: "08 Executor"),
     Model(name: "09 Rebel transport"),
-    Model(name: "10 Imperial shuttle [22]")
+    Model(name: "10 Imperial shuttle")
 ]
 
 struct ContentView: View {
