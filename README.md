@@ -1,5 +1,7 @@
 # NavigationSwiftUI
 
+SkillFactory 43.6 Unit HomeWork
+
 **Task Description**:
 
 - [x] Используя фреймворк `<SwiftUI>`, сделать простое приложение с таблицей.
