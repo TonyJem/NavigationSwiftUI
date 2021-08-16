@@ -113,6 +113,15 @@ struct DetailScreen: View {
             Text("Manufacturer: \(selectedStarship.manufacturer)")
                 .padding(.top)
             
+            Text("Crew: \(selectedStarship.crew)")
+                .padding(.top)
+            
+            Text("Passengers: \(selectedStarship.passengers)")
+                .padding(.top)
+            
+            Text("Cargocapacity: \(selectedStarship.cargoCapacity)")
+                .padding(.top)
+            
             Spacer()
         }
         .padding()
