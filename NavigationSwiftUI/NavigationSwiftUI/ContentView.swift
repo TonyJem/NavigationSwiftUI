@@ -24,7 +24,7 @@ struct ContentView: View {
                     }.font(.title2)
                     .foregroundColor(.green)
                 }
-            }.navigationBarTitle("SpaceShips")
+            }.navigationBarTitle("Starships")
             
         }
     }
