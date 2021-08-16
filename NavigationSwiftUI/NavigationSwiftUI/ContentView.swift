@@ -15,13 +15,17 @@ private let spaceShips: [Model] = [
 
 struct ContentView: View {
     var body: some View {
-        List {
-            ForEach(spaceShips) { color in
-                Group {
-                    Text("\(color.name)")
-                }.font(.title2)
-                .foregroundColor(.green)
-            }
+        NavigationView {
+            
+            List {
+                ForEach(spaceShips) { color in
+                    Group {
+                        Text("\(color.name)")
+                    }.font(.title2)
+                    .foregroundColor(.green)
+                }
+            }.navigationBarTitle("SpaceShips")
+            
         }
     }
 }
