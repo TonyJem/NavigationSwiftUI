@@ -11,7 +11,7 @@
 		3A90CDFA26B0A4A8005A4E57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90CDF926B0A4A8005A4E57 /* ContentView.swift */; };
 		3A90CDFC26B0A4AB005A4E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A90CDFB26B0A4AB005A4E57 /* Assets.xcassets */; };
 		3A90CDFF26B0A4AB005A4E57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A90CDFE26B0A4AB005A4E57 /* Preview Assets.xcassets */; };
-		3A90CE0826B1DE73005A4E57 /* CourseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90CE0726B1DE73005A4E57 /* CourseObject.swift */; };
+		3A90CE0826B1DE73005A4E57 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90CE0726B1DE73005A4E57 /* Starship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		3A90CDFB26B0A4AB005A4E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A90CDFE26B0A4AB005A4E57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A90CE0026B0A4AB005A4E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A90CE0726B1DE73005A4E57 /* CourseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseObject.swift; sourceTree = "<group>"; };
+		3A90CE0726B1DE73005A4E57 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				3A90CDF726B0A4A8005A4E57 /* NavigationSwiftUIApp.swift */,
 				3A90CDF926B0A4A8005A4E57 /* ContentView.swift */,
-				3A90CE0726B1DE73005A4E57 /* CourseObject.swift */,
+				3A90CE0726B1DE73005A4E57 /* Starship.swift */,
 				3A90CDFB26B0A4AB005A4E57 /* Assets.xcassets */,
 				3A90CE0026B0A4AB005A4E57 /* Info.plist */,
 				3A90CDFD26B0A4AB005A4E57 /* Preview Content */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A90CE0826B1DE73005A4E57 /* CourseObject.swift in Sources */,
+				3A90CE0826B1DE73005A4E57 /* Starship.swift in Sources */,
 				3A90CDFA26B0A4A8005A4E57 /* ContentView.swift in Sources */,
 				3A90CDF826B0A4A8005A4E57 /* NavigationSwiftUIApp.swift in Sources */,
 			);
