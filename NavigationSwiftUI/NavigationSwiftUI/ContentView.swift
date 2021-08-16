@@ -1,31 +1,29 @@
 import SwiftUI
 
-private let starShips: [Model] = [
-    Model(name: "01 CR90 corvette"),
-    Model(name: "02 Star Destroyer"),
-    Model(name: "03 Death Star"),
-    Model(name: "04 Millennium Falcon"),
-    Model(name: "05 Y-wing"),
-    Model(name: "06 X-wing"),
-    Model(name: "07 TIE Advanced x1"),
-    Model(name: "08 Executor"),
-    Model(name: "09 Rebel transport"),
-    Model(name: "10 Imperial shuttle")
+private let courseArray: [CourseObject] = [
+    CourseObject(courseName:
+                    "Профессия «Data Scientist»", aboutCourse: "Освойте самую востребованную профессию 2021 года!"),
+    CourseObject(courseName:
+                    "Специализация «Аналитик данных»", aboutCourse: "Полный курс по анализу данных с нуля до Data Analyst со специализацией в маркетинге или продуктовой аналитике"),
+    CourseObject(courseName:
+                    "Профессия «Fullstack-разработчик Python»", aboutCourse: "Освойте программирование на Python и Django и станьте фулстек-разработчиком"),
+    CourseObject(courseName:
+                    "Профессия «Автотестировщик на Python»", aboutCourse: "Быстрый вход в сферу IT, возможность удаленной работы"),
+    CourseObject(courseName:
+                    "Курс Data Science", aboutCourse: "Введение в Data Science"),
+    CourseObject(courseName:
+                    "Профессия «Аналитик Данных»", aboutCourse: "Базовый курс по анализу данных с нуля до Junior-специалиста")
 ]
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            
-            List {
-                ForEach(starShips) { color in
-                    Group {
-                        Text("\(color.name)")
-                    }.font(.title2)
-                    .foregroundColor(.green)
+            List(courseArray) { cource in
+                VStack {
+                    Text(cource.courseName)
+                        .padding(.trailing)
                 }
-            }.navigationBarTitle("Starships")
-            
+            }.navigationTitle("Курсы Skillfactory")
         }
     }
 }
